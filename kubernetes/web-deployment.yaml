@@ -17,5 +17,8 @@ spec:
       containers:
       - name: web
         image: dgarridouma/get-started:part2
+        env:
+        - name: REDIS_HOST
+          value: redis
         ports:
         - containerPort: 80

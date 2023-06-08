@@ -9,6 +9,8 @@ services:
         condition: on-failure
     ports:
       - "4000:80"
+    environment:
+      - REDIS_HOST=redis
     networks:
       - webnet
   visualizer:
